@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainCss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#nav").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top }, 500);
+           });
+       });
+       </script>
+</head>
+<body>
+    <div class="background" id="background">
+    <header class="header" id="header">
+            <nav class="nav" id="nav">
+                <ul id="nav">
+                    <li class="navLink"><a  href="#section__title1" class="navLink">О себе</a></li>
+                    <li class="navLink"><a  href="#section__title2" class="navLink">Карьера</a></li>
+                    <li class="navLink"><a  href="#section__title3" class="navLink">Навыки</a></li>
+                    <li class="navLink"><a  href="#section__title4" class="navLink">Контакты</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <div class="page">
+            <section class="section">
+      <div id="section__title1"><br><br><br></div>
+                <h2 class="section__title1" >О себе</h2> 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, illum exercitationem, dolores corrupti officiis dolore nostrum nulla ea iste aut perferendis? Reiciendis provident, quis eum, aliquid explicabo accusamus nisi laboriosam porro non quos iusto at. Reprehenderit illum earum nemo suscipit.</p>
+                <div id="section__title2"><br><br><br></div>
+            <section class="section">
+                <h2 class="section__title2">Карьера</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae laborum perspiciatis odio molestiae et quisquam facilis optio ratione maiores?</p>
+            </section>
+                <div id="section__title3"><br><br><br></div>
+            <section class="section">
+                <h2 class="section__title3">Навыки</h2> 
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus ea dicta eum atque nulla hic numquam iste fugiat laudantium optio maxime inventore, cum incidunt adipisci voluptates voluptatibus voluptatem ad non ullam odio esse! Facilis dolorem ipsum vero dolor hic odio.
+    <p>Номер телефона: 8(***)-***-**-** <br>Email: *******@mail.com</p>
+            </section>
+        </div>
+        </div>
+
+<script src="three.r119.min.js"></script>
+<script src="vanta.waves.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
